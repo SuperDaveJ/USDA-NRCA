@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup Information</title>
+<link href="../../styles/pop_nrcs.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/usda_nrcs.js"></script>
+<script type="text/javascript">
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 3;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "<p class='popupTitle'>1890 Scholars Program</p>";
+arrPopup[0][1]  = "<p>USDA and the 1890 Historically Black Land Grant Universities (HBCU) work together to award scholarships to students pursuing a Bachelor's degree in agriculture, natural resources or other related academic disciplines at one of the 1890 HBCUs and who are willing to work full time in USDA upon graduation.</p><p>This scholarship provides:</p><ul><li>Tuition and fees</li><li>Room and board</li><li> Books</li><li>Use of a laptop computer, software, and printer</li><li>Employment during the summer and after graduation</li></ul><p>Students must maintain a 3.0 GPA and have an ACT score of 21 or more or combined SAT score of 1500.  Scholarships are open to high school seniors and awarded to incoming college Freshman.  1890 Scholars sign a service agreement committing to work at NRCS one year for every year of education that we provide and must start working within 120 days of graduation.</p>";
+
+arrPopup[1][0]  = "<p class='popupTitle'>USDA Public Service Leaders Scholarship Program</p>"
+arrPopup[1][1]  = "<p>This scholarship operates similarly to the 1890 Scholars Program through the USDA Hispanics Serving Institutions national program office.  However, a critical difference is that students must have completed one year of college before applying.  This program combines an internship with a scholarship to fill critical positions.</p><p>Through this program, the agency provides:</p><ul><li>Tuition</li><li>Books</li><li>Related fees and travel</li><li>A paid summer internship</li></ul><p>Students selected for this program will be converted to full-time employees within 120 days of graduation, and will be required to work for NRCS one year for each year they were awarded the scholarship.</p>";
+
+arrPopup[2][0]  = "<p class='popupTitle'>USDA Tribal College Scholarship Program</p>"
+arrPopup[2][1]  = "<p>The aim of the Tribal Scholars Program is to strengthen a partnership between NRCS and 1994 tribal land-grant institutions, to increase the number of students studying agriculture and agency-related disciplines, and to offer employment opportunities for those students.</p><p>To be awarded one of these scholarships, you must be a U.S. citizen seeking a degree in agriculture or related natural resource sciences at a 1994 tribal land-grant institution.</p><p>Through this program, the agency provides:</p><ul><li>Tuition</li><li>Books and supplies</li><li>Use of a personal computer, software, and printer</li><li>Room and board</li><li>Related fees and travel</li><li>A paid summer internship</li></ul><p>Students selected for this program are required to work for NRCS one year for each year they were awarded the scholarship.</p>";
+</script>
+
+</head>
+
+<body>
+<div id ="popupContent">
+
+</div>
+<script language="javascript" type="text/javascript" >
+	document.getElementById('popupContent').innerHTML = arrPopup[iTerm-1][0]+"<div id='poptext'>"+arrPopup[iTerm-1][1]+"</div>";
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup Information</title>
+<link href="../../styles/pop_nrcs.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/usda_nrcs.js"></script>
+<script type="text/javascript">
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 2;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "<p class='popupTitle'>Basic Benefit Plan</p>";
+arrPopup[0][1]  = "<p>The Basic Benefit operates as a pension plan, where the agency withholds a percentage of the employee's pay as deductions.  Upon retirement, the employee is paid an annuity for the rest of his or her life.  Typically, the annuity payment is calculated as a percentage of the average of the highest basic pay during any three consecutive years multiplied by the employee's years of service.  Calculations may vary slightly based on special provisions for certain positions or disabilities.</p>";
+
+arrPopup[1][0]  = "<p class='popupTitle'>Thrift Savings Plan (TSP)</p>"
+arrPopup[1][1]  = "<p>In the TSP, the agency automatically contributes 1% of the employee's pay into an interest-earning account.  The employee may also contribute any percentage of his or her pay, up to Internal Revenue Code limits.  The agency will match contributions up to 3% dollar-for-dollar, and 50 cents on the dollar for the next 2%.  Employees are vested in agency-matched contributions immediately, and 1% automatic contributions after 3 years of Federal service.  Essentially, this works out to 5% being contributed by the government when the employee contributes 10% or higher.</p>";
+
+//arrPopup[2][0]  = "<p class='popupTitle'></p>"
+//arrPopup[2][1]  = "<p></p>";
+
+</script>
+
+</head>
+
+<body>
+<div id ="popupContent">
+
+</div>
+<script language="javascript" type="text/javascript" >
+	document.getElementById('popupContent').innerHTML = arrPopup[iTerm-1][0]+"<div id='poptext'>"+arrPopup[iTerm-1][1]+"</div>";
+</script>
+</body>
+</html>

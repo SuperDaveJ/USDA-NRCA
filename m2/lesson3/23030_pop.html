@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup Information</title>
+<link href="../../styles/pop_nrcs.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/usda_nrcs.js"></script>
+<script type="text/javascript">
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 1;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "<p class='popupTitle'>Dress Appropriately</p>";
+arrPopup[0][1]  = "<p>Typically, NRCS-branded polo shirts are the dress of choice, but be sure this is appropriate for the event, as discussed previously in the course.  Check with the event coordinator if you are unsure.</p>";
+
+//arrPopup[1][0]  = "<p class='popupTitle'></p>"
+//arrPopup[1][1]  = "<p></p>";
+//
+//arrPopup[2][0]  = "<p class='popupTitle'></p>"
+//arrPopup[2][1]  = "<p></p>";
+//
+//arrPopup[3][0]  = "<p class='popupTitle'></p>"
+//arrPopup[3][1]  = "";
+
+</script>
+
+</head>
+
+<body>
+<div id ="popupContent">
+
+</div>
+<script language="javascript" type="text/javascript" >
+	document.getElementById('popupContent').innerHTML = arrPopup[iTerm-1][0]+"<div id='poptext'>"+arrPopup[iTerm-1][1]+"</div>";
+</script>
+</body>
+</html>

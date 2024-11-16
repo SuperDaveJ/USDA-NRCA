@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>USDA NRCS Main Menu</title>
+<link rel="stylesheet" type="text/css" href="styles/lm_nrcs.css" />
+<style type="text/css">
+body {
+	background-image: url(sysimages/NRCS_mainmenu.jpg);
+	background-repeat: no-repeat;
+}
+</style>
+<script language="JavaScript" type="text/javascript">
+	//Set the following variables 
+	nModule = 5;
+	function updateMenu() {
+		
+	}
+	
+	function writeles () {
+		var strTemp="";
+ 		var status="_started";	
+		//alert(parent.getSingleModuleStatus(iMod))
+		//for (i=0; i<nModule; i++) {
+//			 if (parent.getSingleModuleStatus(i)==1) status = "_started";
+//			 else status = "_completed";
+//			 strTemp = strTemp + "<a href='m"+i+"/m"+i+"_menu.html'><div id='m"+i+status+"' title='Module "+i+"' ></div></a>"
+//		}
+		for (i=1; i<=nModule; i++) {
+			strTemp = strTemp + "<a href='m"+i+"/m"+i+"_menu.html'><div id='m"+i+status+"' title='Module "+i+"' ></div></a>"
+		}
+		document.write(strTemp);
+	}
+</script>
+</head>
+
+<body>
+<script language="javascript"  >
+	writeles()
+</script>
+
+
+</body>
+</html>

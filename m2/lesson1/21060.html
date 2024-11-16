@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/nrcs_page.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>USDA NRCS</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../../styles/page_nrcs.css" />
+<script type="text/javascript" src="../../scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../scripts/usda_nrcs.js"></script>
+<script src="../../scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../scripts/jqFunctions.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<script language="JavaScript" type="text/javascript">
+	//Set the following 3 variables to true accordingly
+	blnFirstPage = false;
+	blnLastPage = false;
+	blnHasCC = false;
+
+	function pgInitialize() {
+		if ( !parent.isPageViewed('21060')) hideNextButton();
+	}
+	
+	function goNext() {
+		nextURL = "21070.html";
+		parent.gotoPage("f", nextURL);
+	}
+	
+	function goBack() {
+		backURL = "21050.html";
+		parent.gotoPage("b", backURL);
+	}
+/******************building list variables*****************/	
+var nObj = 7;
+
+var strCorrectObjs = "1,2,3,4,";
+
+
+arrTPropty = new Array(3);
+arrTPropty[0] = 52; 	//distance between 1st target top and paper top 
+arrTPropty[1] = 85; 	//distance between 1st target left and paper left 
+arrTPropty[2] = 62; 	//interval between targets
+
+
+var arrPopup = new Array(4)
+
+//===distribute value to popup
+arrPopup[0]  = "Before proceeding you must complete the question."
+//Correct feedback
+arrPopup[1]  = "You have identified the correct minimum requirements to be fulfilled in order to be employed at NRCS.";
+//Incorrect feedback for 2nd try
+arrPopup[2]  = "These are the minimum requirements for working at NRCS.";
+//Incorrect feedback for 1st try
+arrPopup[3]  = "One or more of your answers is not a minimum requirement for working at NRCS.  Try again.";
+
+</script>
+<script type="text/javascript" src="../../scripts/listbutton.js"></script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body onload="pgInitialize()">
+<div id="lessonTitle"><!-- InstanceBeginEditable name="lessonTitle" -->Module 2: Recruiting Done Well &middot; <span class="lesson">Lesson 1: Finding the Right People</span><!-- InstanceEndEditable --></div>
+
+<div id="pageNumber"><!-- InstanceBeginEditable name="pageNumber" -->Page 6 of 14<!-- InstanceEndEditable --></div>
+
+<div id="contentArea">
+<!-- InstanceBeginEditable name="contentArea" -->
+<h2 class="topic_title">Recruiting Review</h2>
+<div id="contentArea_half">
+<p>Build a list of the minimum requirements that must be fulfilled to be employed at NRCS by dragging the appropriate items to the list on the right. Select <a href="21060_ac.html" target="_self">here</a> for an alternative question format.</p>
+</div>
+<!-- InstanceEndEditable --></div>	
+<!-- end of #contentArea -->
+<!-- for DD  -->
+<!-- InstanceBeginEditable name="DD" -->
+<div id="selected" style="position:absolute; top:214px; left:67px; width:427px; height:282px;">
+<img src="../images/21060i.jpg" alt="Graphic background for choices." width="456" height="321" /></div>
+
+<div id="target1" style="position:absolute; top:111px; left:537px; width:317px; height:369px;">
+<img src="../../sysimages/notepad.jpg" alt="Background graphic of a blank notebook page with lines." name="target1Img" width="385" height="473" /></div>
+
+<!--================ Drag items positon ==================-->
+<div id="drag5" style="position:absolute; left:83px; top:295px; width:189px; height:51px; cursor:pointer;"><img src="../images/21060b.jpg" alt="Current Vaccinations" name="Drag5Img" width="204" height="55" /></div>
+
+<div id="drag6" style="position:absolute; left:308px; top:220px; width:189px; height:51px; cursor:pointer;">
+<img src="../images/21060d.jpg" alt="Physical Fitness Exam" name="Drag6Img" width="204" height="55" /></div>
+<div id="drag3" style="position:absolute; left:309px; top:296px; width:189px; height:51px; cursor:pointer;">
+<img src="../images/21060e.jpg" alt="Appropriate Education" name="Drag3Img" width="204" height="55" /></div>
+
+<div id="drag1" style="position:absolute; left:82px; top:220px; width:189px; height:51px; cursor:pointer;">
+<img src="../images/21060a.jpg" alt="U.S. Citizenship" name="Drag1Img" width="204" height="55" /></div>
+
+<div id="drag4" style="position:absolute; left:309px; top:373px; width:189px; height:51px; cursor:pointer;">
+<img src="../images/21060f.jpg" alt="Clear Background Check" name="Drag4Img" width="204" height="55" /></div>
+
+<div id="drag2" style="position:absolute; left:83px; top:373px; width:189px; height:51px; cursor:pointer;">
+<img src="../images/21060c.jpg" alt="Valid Driver's License" name="Drag2Img" width="204" height="55" /></div>
+
+<div id="drag7" style="position:absolute; left:196px; top:452px; width:189px; height:51px; cursor:pointer;">
+<img src="../images/21060g.jpg" alt="Credit Score of 650 or higher" name="Drag7Img" width="204" height="55" /></div>
+
+<a href = 'javascript:judgeInteraction()' ><div id='done' style="position:absolute; top:528px; left:259px"></div></a>
+
+<script type="text/javascript" >
+	distrload();
+	init();
+</script>
+<!-- InstanceEndEditable -->
+
+<!-- end of DD -->
+<!-- InstanceBeginEditable name="Prompt" -->
+<div id="prompt">Drag the items on the left to the list on the right, and then select DONE.</div>
+<!-- InstanceEndEditable -->
+
+<!--********** page nav **********-->
+
+<a href="javascript:goNext()"  accesskey="n"><div id="next" title="Next"></div></a>
+
+<a href="javascript:goBack()" accesskey="b"><div id="back" title="Back"></div></a>
+
+<a href="javascript:openHelp()"><div id="help" title="Open Help Window"></div></a>
+
+
+
+<!--********** top Menu Panel **********-->
+
+<a href="javascript: parent.toModuleMenu();" ><div id="menu" title="Go to Lesson Menu"></div></a>
+
+<a href="javascript:openResources()" ><div id="resources" title="Open Resources Window"></div></a>
+
+<a href="javascript:openGlossary()" ><div id="glossary" title="Open Glossary Window"></div></a>
+
+<a href="javascript:exitConfirm()"><div id="exit" title="Exit"></div></a>
+</div>
+<!--********** End of Assets Panel **********-->
+
+</body>
+<!-- InstanceEnd --></html>

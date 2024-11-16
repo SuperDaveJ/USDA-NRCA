@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup Information</title>
+<link href="../../styles/pop_nrcs.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/usda_nrcs.js"></script>
+<script type="text/javascript">
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 3;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "<p class='popupTitle'>Flex Schedules</p>";
+arrPopup[0][1]  = "<p>To establish a family friendly workplace, NRCS has established various work schedules to allow employees sufficient flexibility to meet both work and personal needs, giving employees more control over their lives.  The following schedules may be available to NRCS employees: </p><ul><li>Traditional work schedule:  Ten 8-hour days in a pay period.</li><li>Flexible work schedule (flexitour):  A work schedule in which an employee is allowed to select starting and stopping times within the flexible hours.  Employees must work 8 hours per day, 5 days a week.</li><li>Fixed compressed work schedules (CWS):  NRCS has two types of CWS - 5-4/9 biweekly schedule and 4-10 hour workweek.<ul><li>5-4/9 Biweekly Schedule: A work schedule that is completed in 9 workdays and includes 8, 9-hour work days and 1, 8-hour work day to complete the 80-hour biweekly work requirement.  The 8-hour day can be any pre-scheduled workday in the pay period and must cover the core hours.</li><li>4-10 Hour Workweek:  A type of work schedule that consists of a 10-hour daily work requirement 4 days per week, a 40-hour weekly work requirement, and an 80-hour biweekly work requirement.</li></ul><li>Part-time schedules are also available based on supervisory approval and the needs of the agency.</li></ul><p>Core hours are designated hours (9:00 a.m. to 3:00 p.m.) during which all full-time employees must be present during their normal tour of duty unless on approved leave or scheduled lunch period.</p><p>Supervisors have the authority to disapprove the use of any of the alternative work schedules if an employee's use of the schedule is detrimental to the efficient operation of the office or if the schedule is being abused.</p>";
+
+arrPopup[1][0]  = "<p class='popupTitle'>Telework</p>"
+arrPopup[1][1]  = "<p>When appropriate, and at the discretion of management, employees may have the opportunity to work from home.  Participation in the telework program may be on a long-term or short-term basis, and requires an approved, written agreement signed by the employee and management.   Telework is not an automatic right of employees, and may not be available to certain positions due to the nature of the work required.  For complete information on the telework program, you can refer to General Manual (GM) 360-429.</p>";
+
+arrPopup[2][0]  = "<p class='popupTitle'>Mobility</p>"
+arrPopup[2][1]  = "<p>NRCS serves regions covering all 50 states, as well as territories in the Caribbean and Pacific.  Because of this, employees have opportunities to move to a wide variety of geographical locations to fill positions at NRCS.  Having this kind of option can be quite attractive to potential applicants and affords employees a variety of work settings and challenges if they are open to being geographically mobile.</p><p>When speaking to students, it is also important to explain that NRCS frequently assigns SCEPs and CIPs to a number of different offices to ensure that they have a variety of experiences.  Speak to students about mobility agreements so they will know what to expect.</p>";
+
+</script>
+
+</head>
+
+<body>
+<div id ="popupContent">
+
+</div>
+<script language="javascript" type="text/javascript" >
+	document.getElementById('popupContent').innerHTML = arrPopup[iTerm-1][0]+"<div id='poptext'>"+arrPopup[iTerm-1][1]+"</div>";
+</script>
+</body>
+</html>

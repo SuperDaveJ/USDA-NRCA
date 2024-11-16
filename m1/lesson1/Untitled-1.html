@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+
+</script>
+<script type="text/javascript">
+window.onload = function (evt) {
+  createDocumentStructure('h1');
+}
+</script>
+
+</head>
+
+<body>
+<h5>Click the button below to find the answer to the question. Click again to close the section</h5>
+<!--  In adding new sections, the id number, i.e. id="para#", must be different in each one in both the div and the link  -->
+<div id="para1" style="display:none">
+Yes, all the scripts on this site are free for personal or business use. The only requirement for using them is that you leave the credit information inside the script.
+</div>
+<br>
+<input type="button" class="button" onclick="return toggleMe('para1')" value="Are the JavaScripts here free?">
+<br>
+<div id="para2" style="display:none">
+<br>
+JavaScript is NOT Java. JavaScript is a basic scripting language that allows Web authors to create dynamic pages that react to user interaction.
+</div>
+<br>
+<input type="button" class="button" onclick="return toggleMe('para2')" value="What is JavaScript? Is it the same as Java?">
+
+</body>
+</html>

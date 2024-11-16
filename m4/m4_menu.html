@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/nrcs_lmenu.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>USDA NRCS</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../styles/lm_nrcs.css" />
+<script type="text/javascript" src="../scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../scripts/usda_nrcs.js"></script>
+<script type="text/javascript" src="../scripts/jqFunctions.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<script language="JavaScript" type="text/javascript">
+	//Set the following variables 
+	nLessons = 2;
+	iMod = 4;
+	function updateMenu() {
+		
+	}
+	
+	function pgInitialize() {
+	}
+	
+	function writeles () {
+		var strTemp="";
+ 		var status="_started";	
+		//alert(parent.getSingleLessonStatus(1, 0))
+		//for (i=1; i<=nLessons; i++) {
+//			 if (parent.getSingleLessonStatus(iMod, i)==1) status = "_started";
+//			 else status = "_completed";
+//			 strTemp =+ "<a href='lesson"+i+"/1"+i+"010.html'><div id='les"+i+status+"' title='lesson"+i+"' ></div></a>"
+//		}
+		for (i=1; i<=nLessons; i++) {
+			strTemp = strTemp + "<a href='lesson"+i+"/"+iMod+i+"010.html'><div id='les"+i+status+"' title='lesson"+i+"' ></div></a>"
+		}
+		//alert(strTemp)
+		document.write(strTemp);
+	}
+</script>
+<style type="text/css">
+body {
+	background-image: url(../sysimages/NRCS_lesson_menu_2.jpg);
+}
+</style>
+<!-- InstanceEndEditable -->
+</head>
+
+<body onload="pgInitialize()">
+
+
+
+<!-- InstanceBeginEditable name="contentArea" -->
+<div id="lmm_text"><span class="bold">Module 4:</span> Addressing the Needs of Applicants</div>
+<script language="javascript"  >
+	writeles()
+</script>
+<div id="lml_text">
+  <p>Lesson 1: NRCS-Specific Benefits</p>
+  <p>Lesson 2: Benefits of Working for the Federal Government</p>
+
+</div>
+<!--<div id='les1_started' ></div>
+<div id='les2' ></div>-->
+
+<!-- InstanceEndEditable -->
+<!-- end of #contentArea -->
+
+
+
+
+<!--********** top Menu Panel **********-->
+
+<a href="../mainmenu.html" accesskey="m" ><div id="menu_lm" title="go to Module Menu"></div></a>
+
+<a href="#" accesskey="r"><div id="resources_lm" title="open resources window"></div></a>
+
+<a href="#" accesskey="g"><div id="glossary_lm" title="open glossary window"></div></a>
+
+<a href="javascript:exitConfirm()" accesskey="x"><div id="exit_lm" title="Exit"></div></a>
+
+<!--********** End of Assets Panel **********-->
+
+</body>
+<!-- InstanceEnd --></html>

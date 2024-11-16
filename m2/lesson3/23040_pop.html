@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup Information</title>
+<link href="../../styles/pop_nrcs.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/usda_nrcs.js"></script>
+<script type="text/javascript">
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 4;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "<p class='popupTitle'>Ask Discovery Questions</p>";
+arrPopup[0][1]  = "<p>Ask questions to find out what interests or motivates a candidate.  This will be useful in providing information that is relevant to that candidate.  It will help you promote the agency effectively - tailoring the information you share with a potential applicant, such as Federal benefits, the work environment, and the mission of conservation.  Keep in mind these questions are not screening questions, as in an interview, but instead designed to give you general information about the person so you can better present the opportunities at NRCS.</p>";
+
+arrPopup[1][0]  = "<p class='popupTitle'>Focus on the Mission of NRCS Specifically </p>"
+arrPopup[1][1]  = "<p>Remember, you are a representative of NRCS specifically, not just USDA.  NRCS has a very specific mission within the Department of Agriculture—conservation, and the goal of your recruiting is to find candidates with passions and interests toward that mission.</p>";
+
+arrPopup[2][0]  = "<p class='popupTitle'> Present Information Clearly and Appropriately</p>"
+arrPopup[2][1]  = "<p>When speaking about technical information related to the job, avoid using acronyms and &#8220;jargon&#8221;; when this is unavoidable, check with the candidate and make sure he or she knows the term to which you just referred.  Also, respect the candidate's curiosity—candidates with appropriate skills may not always have experience in the area of conservation or with a specific position at NRCS.<p></p>Be helpful and encouraging, and avoid sounding condescending when a candidate is not familiar with a term or process.  Remember that even if the person with whom you are speaking is not a candidate, they may know someone who is.</p>"
+
+arrPopup[3][0]  = "<p class='popupTitle'>Discuss Positions and Job Titles Knowledgably</p>"
+arrPopup[3][1]  = "<p>Be cognizant of what positions are currently available, and positions you are not currently looking to fill but may have a need for in the future.  Know what responsibilities the job positions entail, and what qualifications a candidate must possess to be considered for the position.<p></p>To move a candidate from someone who's interested to someone who's ready to apply, you also need to be knowledgeable about what hiring authorities and programs are available, and how an individual might use these programs as options for employment.  You'll learn more about hiring authorities in Module 3.</p>"
+
+</script>
+
+</head>
+
+<body>
+<div id ="popupContent">
+
+</div>
+<script language="javascript" type="text/javascript" >
+	document.getElementById('popupContent').innerHTML = arrPopup[iTerm-1][0]+"<div id='poptext'>"+arrPopup[iTerm-1][1]+"</div>";
+</script>
+</body>
+</html>

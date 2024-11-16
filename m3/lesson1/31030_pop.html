@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup Information</title>
+<link href="../../styles/pop_nrcs.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/usda_nrcs.js"></script>
+<script type="text/javascript">
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 3;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "<p class='popupTitle'>Agriculture Conservation Experienced Services (ACES) Program</p>";
+arrPopup[0][1]  = "<p>ACES is a cooperative agreement between four non-profit organizations: Senior Service America, Inc., National Asian Pacific Center on Aging, National Older Worker Career Center, and National Association of Hispanic Elderly.  ACES' purpose is to solicit the talents of individuals who are age 55 years or older and can provide technical services in support of conservation related programs and authorities carried out by the Secretary of Agriculture.</p><p>Individuals that work for NRCS through ACES are not NRCS employees, but rather are employees of the non-profit organization through which they are participating.  NRCS provides funds for supporting those employees to the ACES partner through task agreements.  NRCS conducts interviews and recommends candidates to the program.</p><p> As a recruiter, you may refer potential applicants to an ACES partner website, where such positions are posted.  Therefore, for some efforts or events, it may be helpful to have some knowledge of these openings beforehand.</p>";
+
+arrPopup[1][0]  = "<p class='popupTitle'>When Actually Employed (WAE)</p>"
+arrPopup[1][1]  = "<p>WAE appointments are for temporary, time-limited Federal positions.  WAE appointments are generally used to meet an administrative need for short-term projects or in emergency situations.  WAE employees work an intermittent schedule, and hours may vary from week to week; employees are limited to 180 working days per year.  Not-to-exceed (NTE) dates are assigned to each appointment, generally for a six-month interval, and expire automatically unless it is terminated early or extended.  Agencies make and extend temporary limited appointments without prior approval by OPM, and appointments may be extended indefinitely.  Employees on intermittent appointments do not earn leave, receive holiday pay, or contribute to retirement, and are not eligible for health and life insurance.</p>";
+
+arrPopup[2][0]  = "<p class='popupTitle'>Student Conservation Association (SCA)</p>"
+arrPopup[2][1]  = "<p>SCA is a non-profit organization through which NRCS has established a partnership to provide interns through an agreement process.  SCA is a nationwide force of conservation volunteers for people 18 and over which offers a 3 to 12-month expense paid opportunity across the U.S.</p>";
+</script>
+
+</head>
+
+<body>
+<div id ="popupContent">
+
+</div>
+<script language="javascript" type="text/javascript" >
+	document.getElementById('popupContent').innerHTML = arrPopup[iTerm-1][0]+"<div id='poptext'>"+arrPopup[iTerm-1][1]+"</div>";
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup Information</title>
+<link href="../../styles/pop_nrcs.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/usda_nrcs.js"></script>
+<script type="text/javascript">
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 3;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "<p class='popupTitle'>Be Realistic and Positive About the Work We Do</p>";
+arrPopup[0][1]  = "<p>When speaking to candidates about the nature of the positions, talk about it realistically and in a positive manner.  Inform them that they will be required to perform duties in a field environment and an office environment. <p></p>They will be working on farms and private land, and the field conditions will be contingent upon the land-owner and weather.  The right candidate will see these as a positive aspect of the work, and you should present it as such.  Also, when speaking about job requirements, be sure to mention mobility requirements when appropriate.</p>";
+
+arrPopup[1][0]  = "<p class='popupTitle'>Describe Benefits of Working at NRCS, Relative to the Candidate</p>"
+arrPopup[1][1]  = "<p>There are many benefits of working for NRCS and the Federal government in general.  You'll learn more about these benefits in Module 4.<p></p>It's important to understand what benefits exist, but it's most important during recruiting to talk to the candidate about the benefits that are important to that person.  For instance, if you find out during your discussion with a candidate that he likes to travel, emphasize the many NRCS job locations available and that he would have opportunities to move to various locations through a career with the agency.  Likewise, if you discover that a candidate is interested in the flexibility of work-from-home options, discuss the fact that NRCS has a variety of flex schedules and telework options that might be available to her.</p>";
+//
+arrPopup[2][0]  = "<p class='popupTitle'>Avoid Negative Discussions About NRCS or Other Agencies</p>"
+arrPopup[2][1]  = "<p>No work environment is perfect—each one has its imperfections.  However, while it's important to be realistic about the work, it is not appropriate to talk about personal or organizational issues within NRCS or the USDA.  Also, while it can be useful to compare the work environment and culture of NRCS to other agencies, it is important not to speak negatively about other agencies or organizations.</p>";
+//
+//arrPopup[3][0]  = "<p class='popupTitle'></p>"
+//arrPopup[3][1]  = "";
+
+</script>
+
+</head>
+
+<body>
+<div id ="popupContent">
+
+</div>
+<script language="javascript" type="text/javascript" >
+	document.getElementById('popupContent').innerHTML = arrPopup[iTerm-1][0]+"<div id='poptext'>"+arrPopup[iTerm-1][1]+"</div>";
+</script>
+</body>
+</html>

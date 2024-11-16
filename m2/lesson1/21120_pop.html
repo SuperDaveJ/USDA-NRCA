@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup Information</title>
+<link href="../../styles/pop_nrcs.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/usda_nrcs.js"></script>
+<script type="text/javascript">
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 4;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+
+arrPopup[0][0]  = "<p class='popupTitle'>The Antitrust Division of the Department of Justice:  Building School and Campus Relationships </p>";
+arrPopup[0][1]  = "<p>The Antitrust Division of the Department of Justice (ATR) has developed a diversity outreach initiative to help ensure a robust applicant pool for ATR mission-critical occupations (such as, attorneys, paralegals, and economists).</p><p>As part of this initiative, ATR staff is asked to become volunteer recruiters and visit law schools and student or alumni organizations. During these visits, ATR volunteer recruiters speak to students about ATR and its employment opportunities.  This volunteer recruiter program has successfully increased ATR hires of minorities and women since January 2007.</p>";
+
+arrPopup[1][0]  = "<p class='popupTitle'>NASA:  It's Never Too Early to Recruit</p>"
+arrPopup[1][1]  = "<p>Recruiting initiatives offer a concrete example of NASA's efforts to move from planning to action.  To replenish an ever-diminishing supply of talent, NASA is educating students—from grade school to graduate school—about the exciting opportunities in the fields of science, technology, engineering, and mathematics (or STEM fields).</p><p>Through the Educator Astronaut Program, NASA is working with experts in K-12 education.  NASA's Educator Astronauts will lead the agency's efforts to develop new ways of connecting space exploration to the classroom and inspiring the next generation of explorers.  Offering research and fellowship opportunities in partnership with our country's colleges and universities, NASA also hopes to increase the number of students seeking undergraduate and graduate degrees in STEM fields.</p>";
+
+arrPopup[2][0]  = "<p class='popupTitle'>Nuclear Regulatory Commission:  Recruiting Older Workers</p>"
+arrPopup[2][1]  = "At the Nuclear Regulatory Commission (NRC), 26% of its 593 new excepted service hires were age 50 or older.  According to NRC, the agency values experienced workers, and it uses them as a major resource to mentor younger employees.  Many of NRC's recruitment strategies appeal to older workers, such as advertising in professional journals and promoting job stability.";
+
+arrPopup[3][0]  = "<p class='popupTitle'>The Department of Labor:  Use of Vacancy Announcements </p>"
+arrPopup[3][1]  = "<p>The Department of Labor (DOL) launched the MBA Fellows Program to attract and hire candidates with business expertise and prepare them for future leadership positions through developmental assignments and rotations.</p><p>One way the Human Resources Center is helping target recruiting efforts to fill the MBA Fellows Program is by advertising positions at higher levels, such as GS-9, to attract a higher level of talent. The Center is targeting candidates with advanced degrees, particularly Masters of Business Administration, and these candidates are typically more difficult to recruit.</p>";
+
+</script>
+
+</head>
+
+<body>
+<div id ="popupContent">
+
+</div>
+<script language="javascript" type="text/javascript" >
+	document.getElementById('popupContent').innerHTML = arrPopup[iTerm-1][0]+"<div id='poptext'>"+arrPopup[iTerm-1][1]+"</div>";
+</script>
+</body>
+</html>

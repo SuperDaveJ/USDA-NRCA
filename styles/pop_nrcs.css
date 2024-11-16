@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*=================================================== 
+    Stylesheet for USDA - NRCS
+=====================================================*/
+* {
+	padding: 0px;
+	margin:	0px;
+}
+
+body {
+	background: url(../sysimages/pop_up_medium_header.jpg) no-repeat;
+	background-color:#e8f1f4;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:	15px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	
+}
+
+p {
+	color: #000;
+	line-height: 130%;
+	margin-bottom:20px;
+}
+
+
+a {
+	font-weight:bold;
+	text-decoration: none;
+}
+a:link, a:visited, a:hover, a:active {
+	outline: none;
+}
+a:link, a:hover{
+	color: #048fc9;
+}
+a:visited {
+	/* since visited state does not work for shadowbox, keep it the same as link state for non-shadowbox links */
+	color: #7b0046 /* #131416;*/
+}
+
+
+img {
+	border: 0;
+}
+
+ul, ol {
+	margin: 5px 15px 5px 40px;
+	line-height: 130%;
+}
+ul {
+	list-style-type:disc;
+}
+ul ul {
+	list-style-type:circle;
+}
+
+
+#popupContent { position: absolute; left:10px; top:50px; height:auto;  }
+
+#poptext {
+		width: 530px;
+		height: 355px;
+		overflow: auto;
+		padding-right:10px;
+		scrollbar-arrow-color:#4380af; 
+		scrollbar-base-color:#e8f1f4;
+}
+
+.popupTitle { font-weight:bold; color:  #4c2525; font-size: 18px; }/*SEAN*/
+
+

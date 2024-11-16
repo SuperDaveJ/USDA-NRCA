@@ -1,0 +1,273 @@
+@charset "utf-8";
+/*=================================================== 
+    Stylesheet for USDA - NRCS
+=====================================================*/
+* {
+	padding: 0;
+	margin:	0;
+}
+
+body {
+	background: url(../sysimages/NRCS_lesson_menu_3.jpg) no-repeat;
+	background-color:#000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:	15px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	width: 974px;
+	height: 650px;
+}
+
+p {
+	font-size: 13px;
+	font-weight: bold;
+	text-align: left;
+	color: #27567b;
+	line-height: 58px;
+}
+
+
+a {
+	font-weight:bold;
+	text-decoration: none;
+}
+a:link, a:visited, a:hover, a:active {
+	outline: none;
+}
+a:link, a:hover{
+	color: #048fc9;
+}
+a:visited {
+	/* since visited state does not work for shadowbox, keep it the same as link state for non-shadowbox links */
+	color: #7b0046 /* #131416;*/
+}
+
+
+img {
+	border: 0;
+}
+
+ul, ol {
+	margin: 8px 0 11px 40px;
+}
+ul {
+	list-style-type:disc;
+}
+ul ul {
+	list-style-type:square;
+}
+li {
+	margin-top: 8px;
+}
+
+/* module Menu panel */
+#m1, #m1_started, #m1_completed {
+	position: absolute;
+	top:450px;
+	left:344px;
+	width:94px;
+	height:166px;
+	z-index: 3;
+	background: transparent url("../sysimages/mod1_0.jpg") no-repeat;
+	cursor: pointer;
+}
+	#m1_started {
+		background: transparent url("../sysimages/mod1_inprogress_0.jpg") no-repeat;
+		}
+	#m1_started:hover {background: transparent url("../sysimages/mod1_inprogress_2.jpg") no-repeat;}
+	#m1_completed {background: transparent url("../sysimages/mod1_complete_0.jpg") no-repeat;}
+	#m1_completed:hover {background: transparent url("../sysimages/mod1_complete_2.jpg") no-repeat;}
+	
+#m2, #m2_started, #m2_completed {
+	position: absolute;
+	top:439px;
+	left:467px;
+	width:94px;
+	height:166px;
+	z-index: 3;
+	background: transparent url("../sysimages/mod2_0.jpg") no-repeat;
+	cursor: pointer;
+}
+	#m2_started {
+		background: transparent url("../sysimages/mod2_inprogress_0.jpg") no-repeat;
+		}
+	#m2_started:hover {background: transparent url("../sysimages/mod2_inprogress_2.jpg") no-repeat;}
+	#m2_completed {background: transparent url("../sysimages/mod2_complete_0.jpg") no-repeat;}
+	#m2_completed:hover {background: transparent url("../sysimages/mod2_complete_2.jpg") no-repeat;}
+	
+#m3, #m3_started, #m3_completed {
+	position: absolute;
+	top:431px;
+	left:581px;
+	width:111px;
+	height:166px;
+	z-index: 3;
+	background: transparent url("../sysimages/mod3_0.jpg") no-repeat;
+	cursor: pointer;
+}
+	#m3_started {
+		background: transparent url("../sysimages/mod3_inprogress_0.jpg") no-repeat;
+		}
+	#m3_started:hover {background: transparent url("../sysimages/mod3_inprogress_2.jpg") no-repeat;}
+	#m3_completed {background: transparent url("../sysimages/mod3_complete_0.jpg") no-repeat;}
+	#m3_completed:hover {background: transparent url("../sysimages/mod3_complete_2.jpg") no-repeat;}
+	
+#m4, #m4_started, #m4_completed {
+	position: absolute;
+	top:429px;
+	left:719px;
+	width:94px;
+	height:166px;
+	z-index: 3;
+	background: transparent url("../sysimages/mod4_0.jpg") no-repeat;
+	cursor: pointer;
+}
+	#m4_started {
+		background: transparent url("../sysimages/mod4_inprogress_0.jpg") no-repeat;
+		}
+	#m4_started:hover {background: transparent url("../sysimages/mod4_inprogress_2.jpg") no-repeat;}
+	#m4_completed {background: transparent url("../sysimages/mod4_complete_0.jpg") no-repeat;}
+	#m4_completed:hover {background: transparent url("../sysimages/mod4_complete_2.jpg") no-repeat;}
+	
+#m5, #m5_started, #m5_completed {
+	position: absolute;
+	top:433px;
+	left:841px;
+	width:94px;
+	height:166px;
+	z-index: 3;
+	background: transparent url("../sysimages/mod5_0.jpg") no-repeat;
+	cursor: pointer;
+}
+	#m5_started {
+		background: transparent url("../sysimages/mod5_inprogress_0.jpg") no-repeat;
+		}
+	#m5_started:hover {background: transparent url("../sysimages/mod5_inprogress_2.jpg") no-repeat;}
+	#m5_completed {background: transparent url("../sysimages/mod5_complete_0.jpg") no-repeat;}
+	#m5_completed:hover {background: transparent url("../sysimages/mod5_complete_2.jpg") no-repeat;}
+
+/* Lesson Menu sliding panel */
+#menu_lm {
+	position: absolute;
+	left:578px;
+	top:1px;
+	width:52px;
+	height:24px;
+	z-index: 3;
+	background: transparent url("../sysimages/lm_menu_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#menu_lm:hover { background: transparent url("../sysimages/lm_menu_2.jpg") no-repeat;/*SEAN*/}
+	
+
+#resources_lm {
+	position: absolute;
+	left:631px;
+	top:1px;
+	width:78px;
+	height:24px;
+	z-index: 3;
+	background: transparent url("../sysimages/lm_resources_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#resources_lm:hover { background: transparent url("../sysimages/lm_resources_2.jpg") no-repeat;/*SEAN*/}
+
+
+#glossary_lm {
+	position: absolute;
+	top: 1px;
+	left: 715px;
+	width: 84px;
+	height:26px;
+	z-index: 3;
+	background: transparent url("../sysimages/lm_glossary_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#glossary_lm:hover { background: transparent url("../sysimages/lm_glossary_2.jpg") no-repeat;/*SEAN*/}
+
+
+#exit_lm {
+	position:absolute;
+	left:797px;
+	top:1px;
+	width:51px;
+	height:23px;
+	z-index: 3;
+	background: transparent url("../sysimages/lm_exit_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#exit_lm:hover { background: transparent url("../sysimages/lm_exit_2.jpg") no-repeat;}
+
+
+#les1, #les1_started, #les1_completed {
+	position:absolute;
+	left:227px;
+	top:166px;
+	width:50px;
+	height:55px;
+	z-index: 3;
+	background: transparent url("../sysimages/less1_0.jpg") no-repeat;
+	cursor: pointer;
+}	
+/*	#les1:hover { background: transparent url("../sysimages/less1_2.jpg") no-repeat;}*/
+	#les1_started {
+		background: transparent url("../sysimages/less1_inprogress_0.jpg") no-repeat;
+		}
+	#les1_started:hover {background: transparent url("../sysimages/less1_inprogress_2.jpg") no-repeat;}
+	#les1_completed {background: transparent url("../sysimages/less1_complete_0.jpg") no-repeat;}
+	#les1_completed:hover {background: transparent url("../sysimages/less1_complete_2.jpg") no-repeat;}
+	
+#les2, #les2_started, #les2_completed {
+	position:absolute;
+	left:227px;
+	top:224px;
+	width:50px;
+	height:56px;
+	z-index: 3;
+	background: transparent url("../sysimages/less2_0.jpg") no-repeat;
+	cursor: pointer;
+}
+	/*#les2:hover { background: transparent url("../sysimages/less2_2.jpg") no-repeat;}*/
+	#les2_started {background: transparent url("../sysimages/less2_inprogress_0.jpg") no-repeat;}
+	#les2_started:hover {background: transparent url("../sysimages/less2_inprogress_2.jpg") no-repeat;}
+	#les2_completed {background: transparent url("../sysimages/less2_complete_0.jpg") no-repeat;}
+	#les2_completed:hover {background: transparent url("../sysimages/less2_complete_2.jpg") no-repeat;}
+	
+#les3, #les3_started, #les3_completed {
+	position:absolute;
+	left:227px;
+	top:282px;
+	width:50px;
+	height:56px;
+	z-index: 3;
+	background: transparent url("../sysimages/less3_0.jpg") no-repeat;
+	cursor: pointer;
+}
+	/*#les2:hover { background: transparent url("../sysimages/less2_2.jpg") no-repeat;}*/
+	#les3_started {background: transparent url("../sysimages/less3_inprogress_0.jpg") no-repeat;}
+	#les3_started:hover {background: transparent url("../sysimages/less3_inprogress_2.jpg") no-repeat;}
+	#les3_completed {background: transparent url("../sysimages/less3_complete_0.jpg") no-repeat;}
+	#les3_completed:hover {background: transparent url("../sysimages/less3_complete_2.jpg") no-repeat;}
+
+#lmm_text {
+	position:absolute;
+	left:235px;
+	top:129px;
+	width:502px;
+	height:auto;
+	font-size: 15px;
+	text-align: left;
+	color: #4c2525;
+}
+
+#lmm_text span.bold {font-weight: bold;}
+
+#lml_text {
+	position:absolute;
+	left:299px;
+	top:163px;
+	width:434px;
+	height:auto;
+}

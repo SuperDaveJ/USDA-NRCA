@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/nrcs_page.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>USDA NRCS</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../../styles/page_nrcs.css" />
+<script type="text/javascript" src="../../scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../scripts/usda_nrcs.js"></script>
+<script src="../../scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../scripts/jqFunctions.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<script language="JavaScript" type="text/javascript">
+	//Set the following 3 variables to true accordingly
+	blnFirstPage = false;
+	blnLastPage = false;
+	blnHasCC = false;
+
+	function pgInitialize() {
+		if ( !parent.isPageViewed('42080')) hideNextButton();
+	}
+	
+	function goNext() {
+		nextURL = "42090.html";
+		parent.gotoPage("f", nextURL);
+	}
+	
+	function goBack() {
+		backURL = "42070.html";
+		parent.gotoPage("b", backURL);
+	}
+/******************MA variables*****************/	
+var widthTable = 90;	//table width	
+var nItems = 7;
+var strCorrectAns = "1,1,1,1,1,1,1"
+distracters = new Array(nItems);
+distracters[0]="Employee Organizations"
+distracters[1]="Federal Employees Retirement System"
+distracters[2]="Flexible Work Schedules"
+distracters[3]="Group Life Insurance"
+distracters[4]="Health, Dental, and Vision Insurance"
+distracters[5]="National Mentoring Framework"
+distracters[6]="Pay and Leave Schedules"
+ 
+var fdbkWrong0 = "You have not made any selections.  Please try again."
+var fdbkWrong1 = "One or more of your answers is incorrect.  Remember, the Federal government provides the big impact items while the NRCS provides for local activities. Try again.";
+var fdbkWrong2 = "The Federal government provides the big impact items while the NRCS provides for local activities.";
+var fdbkCorrect = "The Federal government provides the big impact items while the NRCS provides for local activities." 
+ 
+</script>
+<script type="text/javascript" src="../../scripts/MA.js"></script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body onload="pgInitialize()">
+<div id="lessonTitle"><!-- InstanceBeginEditable name="lessonTitle" -->Module 4: Addressing the Needs of Applicants &middot; <span class="lesson">Lesson 2: Benefits of Working for the Federal Government</span><!-- InstanceEndEditable --></div>
+
+<div id="pageNumber"><!-- InstanceBeginEditable name="pageNumber" -->Page 8 of 10<!-- InstanceEndEditable --></div>
+
+<div id="contentArea">
+<!-- InstanceBeginEditable name="contentArea" -->
+<h2 class="topic_title">Recruiting Review</h2>
+
+<p>Below is a list of employee benefits.   Indicate whether each benefit is provided by NRCS specifically (N) or by  the Federal government (G).</p>
+<br />
+<form name="qForm">
+  <script language="javascript"> 
+          writeQuestion()
+          changeCursor('pointer');
+      </script>
+</form>
+
+<!-- InstanceEndEditable --></div>	
+<!-- end of #contentArea -->
+<!-- for DD  -->
+<!-- InstanceBeginEditable name="DD" -->
+
+<!-- InstanceEndEditable -->
+
+<!-- end of DD -->
+<!-- InstanceBeginEditable name="Prompt" -->
+<div id="prompt">Select all that apply, and then select DONE.</div>
+<!-- InstanceEndEditable -->
+
+<!--********** page nav **********-->
+
+<a href="javascript:goNext()"  accesskey="n"><div id="next" title="Next"></div></a>
+
+<a href="javascript:goBack()" accesskey="b"><div id="back" title="Back"></div></a>
+
+<a href="javascript:openHelp()"><div id="help" title="Open Help Window"></div></a>
+
+
+
+<!--********** top Menu Panel **********-->
+
+<a href="javascript: parent.toModuleMenu();" ><div id="menu" title="Go to Lesson Menu"></div></a>
+
+<a href="javascript:openResources()" ><div id="resources" title="Open Resources Window"></div></a>
+
+<a href="javascript:openGlossary()" ><div id="glossary" title="Open Glossary Window"></div></a>
+
+<a href="javascript:exitConfirm()"><div id="exit" title="Exit"></div></a>
+</div>
+<!--********** End of Assets Panel **********-->
+
+</body>
+<!-- InstanceEnd --></html>

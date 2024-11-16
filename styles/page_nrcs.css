@@ -1,0 +1,441 @@
+@charset "utf-8";
+/*=================================================== 
+    Stylesheet for USDA - NRCS
+=====================================================*/
+* {
+	padding: 0;
+	margin:	0;
+}
+
+body {
+	background: url(../sysimages/NRCS_content_page.jpg) no-repeat top left;
+	background-color:#fff;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:	15px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	width: 974px;
+	height: 650px;
+	
+}
+
+p {
+	color: #000;
+	line-height: 130%;
+	margin: 20px 10px 0 0;
+
+}
+
+.indentP20{ padding-left:20px}
+.indentP{ padding-left:50px}
+
+a {
+	font-weight:bold;
+	text-decoration: none;
+}
+a:link, a:visited, a:hover, a:active {
+	outline: none;
+}
+a:link, a:hover{
+	color: #048fc9;
+}
+a:visited {
+	/* since visited state does not work for shadowbox, keep it the same as link state for non-shadowbox links */
+	color: #7b0046 /* #131416;*/
+}
+
+
+img {
+	border: 0;
+}
+
+ul, ol {
+	margin: 20px 15px 0px 40px;
+	line-height: 130%;
+}
+ul {
+	list-style-type:disc;
+}
+ul.ckmk { 
+	list-style-image:url(../m2/images/23040_checkmark.png);
+	margin: 0px 0px 0px 30px;
+}
+ul ul {
+	list-style-type:circle;
+}
+li {
+	margin-top: 10px;
+}
+
+
+#pageNumber {
+	position: absolute;
+	top: 32px;
+	left: 829px;
+	width:134px;
+	height: 20px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	color: #a5681f;
+	text-align: right;
+}
+
+h2.topic_title {
+	font-size: 20px;
+	color: #4c2525;
+}
+
+div.page_text {
+	margin-top: 15px;
+}
+
+#lessonTitle {
+	position: absolute;
+	top: 33px;
+	left: 44px;
+	width:821px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color: #4380af;
+	padding-left:45px;
+}
+
+#lessonTitle span.lesson {
+	color:#27567b/*SEAN*/; 
+
+}
+
+#contentArea {
+	position: absolute;
+	top: 80px;
+	left: 68px;
+	width:856px;
+	height: 514px;
+	text-align: left;
+
+}
+
+#contentArea_half {
+	position:relative;
+	width:423px;
+}
+
+#selicon {
+	position:absolute;
+	left:746px;
+	top:-1px;
+	width:50px;
+}
+
+#graphic_left {
+	position:absolute;
+	left:482px;
+	top:98px;
+	text-align:center;
+	width: 380px;
+	height: 328px;
+}
+
+#text_left {
+	position:absolute;
+	left:482px;
+	top:58px;
+	height:400px;
+	overflow:auto;
+	padding:0px 10px 0px 15px;
+}
+
+#prompt {
+	position:absolute;
+	left:51px;
+	top:626px;
+	width:815px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #a7d4f4;
+}
+
+#next {
+	position:absolute;
+	left:802px;
+	top:590px;
+	width:49px;
+	height:52px;
+	z-index: 3;
+	background: transparent url("../sysimages/next_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#next:hover { background: transparent url("../sysimages/next_2.jpg") no-repeat;}
+	#next.disabled { visibility:hidden}
+
+#back {
+	position:absolute;
+	left:763px;
+	top:596px;
+	width:35px;
+	height:38px;
+	z-index: 3;
+	background: transparent url("../sysimages/back_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#back:hover { background: transparent url("../sysimages/back_2.jpg") no-repeat;/*SEAN*/}
+	#back.disabled { visibility:hidden}
+
+
+#help {
+	position:absolute;
+	left:853px;
+	top:596px;
+	width:50px;
+	height:43px;
+	z-index: 3;
+	background: transparent url("../sysimages/help_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#help:hover { background: transparent url("../sysimages/help_2.jpg") no-repeat;/*SEAN*/}
+	#help.disabled { visibility:hidden}
+
+
+#divNarration {
+	position:fixed;
+	top:50px;
+	left:-50px;	/* hide it */
+	width: 1px;
+	height: 1px;
+}
+
+/* Menu sliding panel */
+#menu, #menu_lm {
+	position: absolute;
+	left:578px;
+	top:1px;
+	width:52px;
+	height:24px;
+	z-index: 3;
+	background: transparent url("../sysimages/menu_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#menu:hover { background: transparent url("../sysimages/menu_2.jpg") no-repeat;/*SEAN*/}
+	#menu.disabled { visibility:hidden}
+	#menu_lm {background: transparent url("../sysimages/lm_menu_0.jpg") no-repeat;}
+	#menu_lm:hover { background: transparent url("../sysimages/lm_menu_2.jpg") no-repeat;/*SEAN*/}
+	
+
+#resources, #resources_lm {
+	position: absolute;
+	left:631px;
+	top:1px;
+	width:78px;
+	height:24px;
+	z-index: 3;
+	background: transparent url("../sysimages/resources_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#resources:hover { background: transparent url("../sysimages/resources_2.jpg") no-repeat;/*SEAN*/}
+	#resources.disabled { visibility:hidden}
+	#resources_lm { background: transparent url("../sysimages/lm_resources_0.jpg") no-repeat;/*SEAN*/}
+	#resources_lm:hover { background: transparent url("../sysimages/lm_resources_2.jpg") no-repeat;/*SEAN*/}
+
+
+#glossary, #glossary_lm {
+	position: absolute;
+	top: 1px;
+	left: 715px;
+	width: 84px;
+	height:26px;
+	z-index: 3;
+	background: transparent url("../sysimages/glossary_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#glossary:hover { background: transparent url("../sysimages/glossary_2.jpg") no-repeat;/*SEAN*/}
+	#glossary.disabled { visibility:hidden}
+	#glossary_lm { background: transparent url("../sysimages/lm_glossary_0.jpg") no-repeat;/*SEAN*/}
+	#glossary_lm:hover { background: transparent url("../sysimages/lm_glossary_2.jpg") no-repeat;/*SEAN*/}
+
+
+#exit, #exit_lm {
+	position:absolute;
+	left:797px;
+	top:1px;
+	width:51px;
+	height:23px;
+	z-index: 3;
+	background: transparent url("../sysimages/exit_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#exit:hover { background: transparent url("../sysimages/exit_2.jpg") no-repeat;/*SEAN*/}
+	#exit.disabled { visibility:hidden}
+	#exit_lm { background: transparent url("../sysimages/lm_exit_0.jpg") no-repeat;/*SEAN*/}
+	#exit_lm:hover { background: transparent url("../sysimages/lm_exit_2.jpg") no-repeat;/*SEAN*/}
+
+/*=====not pad ==========*/
+#notepad {
+	background:url(../sysimages/11070.jpg) no-repeat;
+	position:absolute;
+	top:19px;
+	left:460px;
+	width:436px;
+	height:480px;
+}
+
+#notepad_txt {
+	position:absolute;
+	top:76px;
+	left:52px;
+	height:360px;
+	width:300px;
+	overflow:auto;
+	padding-right:5px;
+	scrollbar-arrow-color:#4380af;
+	scrollbar-base-color:#e8f1f4;
+}
+
+#btnnoteF {
+	position:absolute;
+	left:831px;
+	top:274px;
+	width:34px;
+	height:34px;
+	z-index: 3;
+	background: transparent url("../sysimages/11070_NB_minibutt_next_0.jpg") no-repeat;
+	cursor: pointer;
+}
+	#btnnoteF:hover { background: transparent url("../sysimages/11070_NB_minibutt_next_2.jpg") no-repeat;
+	}
+	
+#btnnoteB {
+	position:absolute;
+	left:831px;
+	top:196px;
+	width:34px;
+	height:34px;
+	z-index: 4;
+	visibility:hidden;
+	background: url(../sysimages/11070_NB_minibutt_back_0.jpg) no-repeat;
+	cursor: pointer;
+}
+	#btnnoteB:hover { background:  transparent url(../sysimages/11070_NB_minibutt_back_2.jpg) no-repeat;
+	}
+	
+#btnnoteP {
+	position:absolute;
+	left:834px;
+	top:229px;
+	width:46px;
+	height:43px;
+	z-index: 4;
+	background: url(../sysimages/11070_NB_minibutt_print_0.jpg) no-repeat;
+	cursor: pointer;
+}
+	#btnnoteP:hover { background:  transparent url(../sysimages/11070_NB_minibutt_print_2.jpg) no-repeat;
+	}
+
+/*========= expert response ======*/
+#expResp {
+	position:absolute;
+	background:url(../sysimages/12030.jpg) no-repeat;
+	left:85px;
+	top:162px;
+	width:816px;
+	height:406px;
+}
+ 
+#inputtxt {
+	position:absolute;
+	left:103px;
+	top:230px;
+	width:378px;
+	height:280px;
+	z-index:10;
+}
+
+#eresptxt {
+	position:absolute; 
+	left:517px; 
+	top:221px; 
+	width:363px; 
+	height:288px; 
+	z-index:10;
+	overflow:auto;
+}
+
+.pwhite {color:#FFF;margin: 5px 10px 0 0;}
+.typeing {
+	color: #4380af;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:	15px;
+	padding: 5px 5px 0 5px;
+	}
+	
+/*====== Interaction ===========*/
+#done {
+	position:relative;
+	z-index: 3;
+	width:86px;
+	height:40px;
+	background: transparent url("../sysimages/done_0.jpg") no-repeat;
+	cursor: pointer;
+	}
+	#done:hover { background: transparent url("../sysimages/done_2.jpg") no-repeat;/*SEAN*/}
+	
+	#done:disabled {background: transparent url("../sysimages/done_3.jpg") no-repeat;}
+
+#q_next {
+	position:relative;
+	z-index: 3;
+	width:86px;
+	height:40px;
+	top:-50px;
+	left: 360px;
+	background: transparent url("../sysimages/lm_exit_0.jpg") no-repeat;
+	cursor: pointer;
+	visibility:hidden;
+	}
+	#q_next:hover { background: transparent url("../sysimages/lm_exit_2.jpg") no-repeat;/*SEAN*/}
+/*====== MC/MA distracter ================*/
+.distrText { margin-top:0px;}
+
+/*=======Grid ==============*/
+.gridStyle {
+	border-style:solid; 
+	border-color:#076c99;
+	border-collapse:collapse;
+	border-width:0 0px 1px 0; 
+}
+td.gridTop {
+	border-style:solid; 
+	border-color:#ba93a9; 
+	border-collapse:collapse;
+	border-width:0px 0px 3px 0; 
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	color:#305e7f;
+	padding:2px 5px 2px 5px;
+	font-weight:bold;
+}
+td.gridLeft {
+	border-style:solid; 
+	border-color:#305e7f; 
+	border-collapse:collapse;
+	border-width:0 0px 1px 0px; 
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-size: 15px;
+	padding:5px;
+
+}
+td.gridFirstCell {
+	border-style:solid; 
+	border-color:#ba93a9; 
+	border-collapse:collapse;
+	border-width:0px 0px 3px 0; 
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #305e7f;
+	font-weight:bold;
+	padding:3px 0 3px 0;
+}
